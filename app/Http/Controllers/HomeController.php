@@ -507,8 +507,8 @@ class HomeController extends Controller
 
             // set secret and public key
             $stripe = array(
-                "secret_key" => "sk_test_51LIV9wJ4YJVkDTEY5Vqaq95Z16XxFiMcHQUDK3NxjETCqT8NCIq7slcHC7IdZo0voM5AJTbUssGp5DJ4qzZZOv5q00BVScLQMe",
-                "publishable_key" => "pk_test_51LIV9wJ4YJVkDTEY4KQfDJS6tmL08YNTzpDOjSUtwYNWg7dPem8AonTGBf0QkGAoRnWwCWllJsUry25YzawU3NSn00fhtYe2wq"
+                "secret_key" => "Secret",
+                "publishable_key" => "Public_key"
 
             );
 

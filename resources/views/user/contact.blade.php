@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-@include('user.css')
+    @include('user.css')
 
 </head>
 
@@ -36,24 +36,27 @@
         <div class="container">
             <h1 class="text-center wow fadeInUp">Get in Touch</h1>
 
-            <form method="POST" action="{{url('get_in_touch_msg')}}" class="contact-form mt-5">
-            @csrf
-            <div class="row mb-3">
+            <form method="POST" action="{{ url('get_in_touch_msg') }}" class="contact-form mt-5">
+                @csrf
+                <div class="row mb-3">
                     <div class="col-sm-6 py-2 wow fadeInLeft">
                         <label for="fullName">Name</label>
-                        <input name="name" type="text" id="fullName" class="form-control" placeholder="Full name..">
+                        <input name="name" type="text" id="fullName" class="form-control"
+                            placeholder="Full name..">
                     </div>
                     <div class="col-sm-6 py-2 wow fadeInRight">
                         <label for="emailAddress">Email</label>
-                        <input required name="email" type="email" id="emailAddress" class="form-control" placeholder="Email address..">
+                        <input required name="email" type="email" id="emailAddress" class="form-control"
+                            placeholder="Email address..">
                     </div>
                     <div class="col-12 py-2 wow fadeInUp">
                         <label for="subject">Subject</label>
-                        <input required name="subject" type="text" id="subject" class="form-control" placeholder="Enter subject..">
+                        <input required name="subject" type="text" id="subject" class="form-control"
+                            placeholder="Enter subject..">
                     </div>
                     <div class="col-12 py-2 wow fadeInUp">
                         <label for="message">Message</label>
-                        <textarea  name="message" id="message" class="form-control" rows="8" placeholder="Enter Message.."></textarea>
+                        <textarea name="message" id="message" class="form-control" rows="8" placeholder="Enter Message.."></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary wow zoomIn">Send Message</button>
@@ -63,8 +66,11 @@
 
     <div class="maps-container wow fadeInUp">
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.549066149113!2d73.1952321!3d33.6795097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfef10fa74d46d99b!2sFederal%20Urdu%20University%20of%20Arts%2C%20Sciences%20%26%20Technology%2C%20Islamabad!5e0!3m2!1sen!2s!4v1653382211341!5m2!1sen!2s" width="1350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.549066149113!2d73.1952321!3d33.6795097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfef10fa74d46d99b!2sFederal%20Urdu%20University%20of%20Arts%2C%20Sciences%20%26%20Technology%2C%20Islamabad!5e0!3m2!1sen!2s!4v1653382211341!5m2!1sen!2s"
+            width="1350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
 
     </div>
 
@@ -85,7 +91,7 @@
 
     <script src="../assets/js/theme.js"></script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script>
 
 </body>
 
